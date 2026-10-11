@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ru" data-route="about" data-section="about">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lena — digital- и web-дизайнер</title>
+  <meta name="description" content="Digital- и web-дизайнер: айдентика, лендинги и промоматериалы для digital-продуктов.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Елена Худошина — digital- и web-дизайнер">
+  <meta property="og:description" content="Портфолио: айдентика, сайты, приложения и промоматериалы для digital-продуктов.">
+  <meta name="theme-color" content="#0e0e0e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=44">
+  <noscript><style>.loader, .curtain { display: none !important; }</style></noscript>
+</head>
+<body>
+
+  <!-- ============ Шапка (общая для всех страниц) ============ -->
+  <header class="hdr">
+    <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mmenu">
+      <span></span><span></span>
+    </button>
+
+    <a class="hdr__logo a" href="#/about" aria-label="Lena — на главную">
+      <!-- компьютер: трёхгранная призма, грани поворачиваются по скроллу -->
+      <span class="logo3d" aria-hidden="true">
+        <span class="logo3d__prism">
+          <span class="logo3d__face" style="--i:0"><img src="assets/img/logo3d/face1.svg" alt=""><img class="logo3d__red" src="assets/img/logo3d/face1-red.svg" alt=""></span>
+          <span class="logo3d__face" style="--i:1"><img src="assets/img/logo3d/face2.svg" alt=""><img class="logo3d__red" src="assets/img/logo3d/face2-red.svg" alt=""></span>
+          <span class="logo3d__face" style="--i:2"><img src="assets/img/logo3d/face3.svg" alt=""><img class="logo3d__red" src="assets/img/logo3d/face3-red.svg" alt=""></span>
+        </span>
+      </span>
+      <!-- телефон: просто подпись «Lena» без рамки -->
+      <img class="hdr__logo-mob" src="assets/img/logo-header-h-noframe.svg" alt="">
+    </a>
+
+    <nav class="menu a" aria-label="Навигация">
+      <span class="label t10">Навигация:</span>
+      <div class="menu__list">
+        <a class="menu__item t19" href="#/cases" data-section="cases"><span>Кейсы</span></a>
+        <a class="menu__item t19" href="#/about" data-section="about"><span>Обо мне</span></a>
+        <a class="menu__item t19" href="#/contacts" data-section="contacts"><span>Контакты</span></a>
+      </div>
+    </nav>
+
+    <a class="hdr__cv a t10 arrow-link" data-link="cv">
+      <span>Скачать CV</span>
+      <img src="assets/img/arrow.svg" alt="">
+    </a>
+
+    <div class="hdr__contacts a t10">
+      <span class="label">Контакты:</span>
+      <ul class="small-list">
+        <li><a data-link="email">Почта</a></li>
+        <li><a data-link="telegram">тг</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ Меню на телефоне (открывается бургером) ============ -->
+  <div class="mmenu" id="mmenu" aria-hidden="true">
+    <p class="mmenu__intro">Digital и web-дизайнер<br>Айдентика, лендинги, промо</p>
+    <nav class="mmenu__list" aria-label="Навигация">
+      <a class="mmenu__item" href="#/cases" data-section="cases">Кейсы</a>
+      <a class="mmenu__item" href="#/about" data-section="about">Обо мне</a>
+      <a class="mmenu__item" href="#/contacts" data-section="contacts">Контакты</a>
+    </nav>
+    <div class="mmenu__foot">
+      <div>
+        <span class="label">Контакты:</span>
+        <ul class="mmenu__links">
+          <li><a data-link="email">Почта</a></li>
+          <li><a data-link="telegram">тг</a></li>
+        </ul>
+      </div>
+      <a class="mmenu__cv" data-link="cv"><span>Скачать CV</span><img src="assets/img/arrow.svg" alt=""></a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ Обо мне / Контакты ============ -->
+    <section class="page about" id="page-about" data-page="about">
+      <h1 class="visually-hidden">Lena — digital- и web-дизайнер</h1>
+
+      <p class="about__intro red a" data-in style="--i:1">
+        <span class="ln">Digital- и web-дизайнер</span>
+        <span class="ln">с опытом работы 3,5 года,</span>
+        <span class="ln">учусь на третьем курсе</span>
+        <span class="ln">НИУ ВШЭ. Специализируюсь</span>
+        <span class="ln">на айдентике, лендингах</span>
+        <span class="ln ln--hyphen">и промоматериалах для digital-</span>
+        <span class="ln">продуктов</span>
+      </p>
+
+      <div class="about__stage">
+        <p class="big big--20 a a--c" data-in style="--i:2" aria-hidden="true">20</p>
+        <p class="about__and red a a--c" data-in style="--i:3" aria-hidden="true">и</p>
+        <p class="big big--04 a a--c" data-in style="--i:4" aria-hidden="true">04</p>
+
+        <!-- Девушка: при наведении шапка взлетает и видно, что у неё в голове -->
+        <div class="head a a--c" data-in style="--i:2">
+          <button class="head__hit" type="button" aria-label="Заглянуть под шапку" aria-pressed="false"></button>
+          <img class="head__closed" src="assets/img/head/closed.png" alt="" style="left:-6.783%;top:8.769%;width:101.296%;height:67.423%">
+          <img class="head__open" src="assets/img/head/open.png" alt="" style="left:4.63%;top:49.072%;width:90.556%;height:49.588%">
+          <button class="head__item" type="button" data-note="картина" style="left:34.63%;top:17.629%;width:15.741%;height:9.588%;--dx:25.4;--dy:182.0;--r:45deg;--din:484ms;--dout:56ms"><img src="assets/img/head/item-01.png" alt=""></button>
+          <span class="head__item" style="left:57.593%;top:17.938%;width:3.704%;height:2.062%;--dx:-32.7;--dy:203.3;--r:-27deg;--din:588ms;--dout:0ms"><img src="assets/img/head/item-02.png" alt=""></span>
+          <button class="head__item" type="button" data-note="шар" style="left:63.889%;top:18.144%;width:17.778%;height:6.907%;--dx:-78.3;--dy:187.1;--r:-17deg;--din:562ms;--dout:14ms"><img src="assets/img/head/item-03.png" alt=""></button>
+          <button class="head__item" type="button" data-note="часы" style="left:48.148%;top:21.649%;width:14.63%;height:12.784%;--dx:-19.0;--dy:147.5;--r:-26deg;--din:432ms;--dout:84ms"><img src="assets/img/head/item-04.png" alt=""></button>
+          <span class="head__item" style="left:19.444%;top:22.268%;width:7.778%;height:3.402%;--dx:91.0;--dy:172.5;--r:-44deg;--din:536ms;--dout:28ms"><img src="assets/img/head/item-05.png" alt=""></span>
+          <span class="head__item" style="left:75.185%;top:24.742%;width:3.889%;height:1.959%;--dx:-93.2;--dy:161.7;--r:-16deg;--din:510ms;--dout:42ms"><img src="assets/img/head/item-06.png" alt=""></span>
+          <button class="head__item" type="button" data-note="геймпад" style="left:14.074%;top:25.464%;width:26.852%;height:12.577%;--dx:76.7;--dy:124.6;--r:-28deg;--din:406ms;--dout:98ms"><img src="assets/img/head/item-07.png" alt=""></button>
+          <button class="head__item" type="button" data-note="кот" style="left:62.037%;top:26.495%;width:22.222%;height:9.485%;--dx:-79.6;--dy:127.8;--r:17deg;--din:458ms;--dout:70ms"><img src="assets/img/head/item-08.png" alt=""></button>
+          <span class="head__item" style="left:41.852%;top:28.557%;width:4.444%;height:1.959%;--dx:20.0;--dy:138.3;--r:-17deg;--din:380ms;--dout:112ms"><img src="assets/img/head/item-09.png" alt=""></span>
+          <span class="head__item" style="left:41.852%;top:33.608%;width:4.444%;height:2.062%;--dx:20.0;--dy:106.9;--r:16deg;--din:276ms;--dout:168ms"><img src="assets/img/head/item-10.png" alt=""></span>
+          <button class="head__item" type="button" data-note="растение" style="left:24.815%;top:34.227%;width:23.889%;height:15.464%;--dx:45.0;--dy:61.8;--r:-45deg;--din:172ms;--dout:224ms"><img src="assets/img/head/item-11.png" alt=""></button>
+          <button class="head__item" type="button" data-note="блокнот" style="left:47.222%;top:34.227%;width:17.037%;height:10.412%;--dx:-20.0;--dy:77.4;--r:-35deg;--din:198ms;--dout:210ms"><img src="assets/img/head/item-12.png" alt=""></button>
+          <span class="head__item" style="left:65.0%;top:35.773%;width:3.889%;height:2.165%;--dx:-58.4;--dy:93.2;--r:-33deg;--din:302ms;--dout:154ms"><img src="assets/img/head/item-13.png" alt=""></span>
+          <span class="head__item" style="left:77.963%;top:36.598%;width:6.667%;height:2.887%;--dx:-107.5;--dy:85.9;--r:16deg;--din:354ms;--dout:126ms"><img src="assets/img/head/item-14.png" alt=""></span>
+          <span class="head__item" style="left:13.148%;top:37.835%;width:7.222%;height:5.567%;--dx:113.5;--dy:70.1;--r:-16deg;--din:328ms;--dout:140ms"><img src="assets/img/head/item-15.png" alt=""></span>
+          <button class="head__item" type="button" data-note="ноутбук" style="left:52.778%;top:38.557%;width:27.778%;height:10.928%;--dx:-57.4;--dy:49.2;--r:-24deg;--din:146ms;--dout:238ms"><img src="assets/img/head/item-16.png" alt=""></button>
+          <span class="head__item" style="left:21.852%;top:44.948%;width:3.889%;height:2.165%;--dx:89.4;--dy:36.8;--r:19deg;--din:224ms;--dout:196ms"><img src="assets/img/head/item-17.png" alt=""></span>
+          <span class="head__item" style="left:46.852%;top:46.495%;width:3.519%;height:2.268%;--dx:4.4;--dy:27.0;--r:-33deg;--din:120ms;--dout:252ms"><img src="assets/img/head/item-18.png" alt=""></span>
+          <span class="head__item" style="left:77.778%;top:47.01%;width:6.667%;height:3.814%;--dx:-106.9;--dy:19.0;--r:32deg;--din:250ms;--dout:182ms"><img src="assets/img/head/item-19.png" alt=""></span>
+          <span class="head__hat" style="left:19.63%;top:1.237%;width:54.074%;height:18.969%"><img src="assets/img/head/hat.png" alt=""></span>
+        </div>
+
+        <!-- Карточка контактов (страница «Контакты») -->
+        <div class="ccard a a--c">
+          <div class="ccard__body">
+            <h2 class="ccard__title">Контакты</h2>
+            <ul class="ccard__list">
+              <li><a data-link="email">Почта</a></li>
+              <li><a data-link="telegram">тг</a></li>
+            </ul>
+            <a class="ccard__cv arrow-link" data-link="cv">
+              <span>Скачать CV</span>
+              <img src="assets/img/arrow-white.svg" alt="">
+            </a>
+          </div>
+          <div class="ccard__photo">
+            <img src="assets/img/girl-wave.png" alt="Lena машет рукой" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <p class="about__outro red a a--b" data-in style="--i:5">
+        <span class="ln">Разрабатываю визуальные</span>
+        <span class="ln">концепции с учётом задач</span>
+        <span class="ln">бизнеса и аудитории. Активно</span>
+        <span class="ln">использую нейросети</span>
+        <span class="ln">для исследований, поиска</span>
+        <span class="ln">идей, создания визуалов</span>
+        <span class="ln">и прототипирования</span>
+      </p>
+
+      <div class="about__facts">
+      <div class="fact fact--awards a a--b t10" data-in style="--i:6">
+        <span class="label">Награды:</span>
+        <ul class="small-list">
+          <li>Хакатон от макса</li>
+          <li>Хакатон от вк</li>
+          <li>Хакатон от Альфабанка</li>
+          <li>Выбор DAFES. Октябрь 2025 финалист</li>
+          <li>Космохакатон</li>
+          <li>Хакатон от Макса и Вк</li>
+        </ul>
+      </div>
+
+      <div class="fact fact--exp a a--b t10" data-in style="--i:7">
+        <span class="label">Опыт (3,5 года):</span>
+        <ul class="small-list js-exp"></ul>
+      </div>
+
+      <div class="fact fact--edu a a--b t10" data-in style="--i:8">
+        <span class="label">Образование:</span>
+        <ul class="small-list">
+          <li>Нижегородское художественное училище</li>
+          <li>2020–2024 · дизайнер, преподаватель</li>
+          <li class="small-list__gap">НИУ ВШЭ, 3-й курс · выпуск 2028</li>
+          <li>Дизайн и продвижение цифрового продукта</li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============ Кейсы: лента ============ -->
+    <section class="page cases" id="page-cases" data-page="cases" aria-label="Кейсы">
+      <div class="cases__cards"></div>
+
+      <div class="cases__fields">
+      <div class="cases__field cases__field--title a a--c t10">
+        <span class="label">Проект:</span>
+        <p class="swap" data-cases-title></p>
+      </div>
+      <div class="cases__field cases__field--role a a--c t10">
+        <span class="label">Роль:</span>
+        <p class="swap" data-cases-role></p>
+      </div>
+      <div class="cases__field cases__field--done a a--c t10" data-cases-done-field>
+        <span class="label">Что сделано:</span>
+        <p class="swap" data-cases-done></p>
+      </div>
+      </div>
+
+      <p class="cases__num num a a--b" aria-live="polite"><span class="num__in" data-cases-num></span></p>
+
+      <!-- телефон: название, черта, что за проект и роль -->
+      <div class="cases__cap" aria-hidden="true">
+        <p class="cases__cap-title swap" data-cases-captitle></p>
+        <span class="cases__cap-line"></span>
+        <p class="cases__cap-info swap" data-cases-capinfo></p>
+      </div>
+
+      <span class="hint a a--b t10">Скролл</span>
+
+      <div class="fact fact--exp-right a a--b t10">
+        <span class="label">Опыт (3,5 года):</span>
+        <ul class="small-list js-exp"></ul>
+      </div>
+    </section>
+
+    <!-- ============ Кейс внутри ============ -->
+    <section class="page case" id="page-case" data-page="case" aria-label="Кейс">
+      <div class="case__info">
+        <div class="case__text">
+          <span class="case__label-about label a t10">О проекте:</span>
+          <div class="case__about a t10">
+            <p class="case__name" data-case-title></p>
+            <p data-case-desc></p>
+          </div>
+          <span class="case__label-role label a t10">Роль:</span>
+          <p class="case__role a t10" data-case-role></p>
+          <span class="case__label-done label a t10">Что сделано:</span>
+          <ul class="case__done a t10" data-case-done></ul>
+          <a class="case__link a" data-case-link>
+            <span>Посмотреть</span>
+            <img src="assets/img/arrow-small.svg" alt="">
+          </a>
+        </div>
+
+        <nav class="case__nav a a--b t10" aria-label="Навигация по кейсам">
+          <span class="label" data-case-counter></span>
+          <div class="case__nav-row">
+            <a class="case__nav-item case__nav-item--prev" data-case-prev aria-label="Предыдущий кейс">
+              <img src="assets/img/arrow.svg" alt=""><span>назад</span>
+            </a>
+            <a class="case__nav-item case__nav-item--next" data-case-next aria-label="Следующий кейс">
+              <span>вперёд</span><img src="assets/img/arrow.svg" alt="">
+            </a>
+          </div>
+        </nav>
+
+        <span class="hint a a--b t10">Скролл</span>
+      </div>
+
+      <div class="case__fade" aria-hidden="true"></div>
+
+      <div class="case__content">
+        <div class="case__gallery" data-case-gallery></div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Переход между разделами: девушка двигает чёрную плашку ============ -->
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain__move">
+      <span class="curtain__title"></span>
+      <img class="curtain__girl girl" src="assets/img/girl-push.svg" alt="">
+    </div>
+  </div>
+
+  <!-- ============ Превью загрузки ============ -->
+  <div class="loader" aria-hidden="true">
+    <img class="loader__logo" src="assets/img/logo-lena.svg" alt="">
+    <div class="curtain__move loader__move">
+      <img class="loader__girl girl" src="assets/img/girl-push.svg" alt="">
+    </div>
+  </div>
+
+  <!-- Бумажка-подсказка: предметы из шапки и карточки опыта -->
+  <div class="note" aria-hidden="true">
+    <button class="note__close" type="button" aria-label="Закрыть" tabindex="-1"></button>
+    <p class="note__kicker"></p>
+    <p class="note__title"></p>
+    <p class="note__role"></p>
+    <p class="note__text"></p>
+    <ul class="note__list"></ul>
+    <p class="note__extra"><span class="note__extra-label"></span> <span class="note__extra-text"></span></p>
+  </div>
+
+  <script src="js/content.js?v=27"></script>
+  <script src="js/app.js?v=27"></script>
+  <script src="js/eyes.js?v=1"></script>
+</body>
+</html>
