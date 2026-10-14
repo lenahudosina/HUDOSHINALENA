@@ -891,6 +891,40 @@ h1, h2 { font: inherit; }
 .case__shot.is-rounded { background: none; overflow: hidden; }
 .case__shot img, .case__shot video { display: block; width: 100%; height: auto; }
 
+/* слайдер внутри кейса: картинки листаются вбок */
+.case__slider { background: none; }
+.case__slider-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+.case__slider-track::-webkit-scrollbar { display: none; }
+.case__slider-track img { flex: 0 0 100%; scroll-snap-align: start; }
+.case__slider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.case__slider-btn {
+  width: 36px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.case__slider-btn img { width: 22px; height: 7px; transition: transform .3s var(--ease); }
+.case__slider-btn--prev img { transform: scaleX(-1); }
+.case__slider-btn:hover img { transform: translateX(3px); }
+.case__slider-btn--prev:hover img { transform: scaleX(-1) translateX(3px); }
+.case__slider-dots { display: flex; gap: 6px; }
+.case__slider-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ph); transition: background-color .3s; }
+.case__slider-dot.is-active { background: var(--ink); }
+
 
 /* ============================================================
    Переход: девушка двигает чёрную плашку с названием раздела
