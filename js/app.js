@@ -902,6 +902,11 @@
       const images = Array.isArray(c.images) ? c.images.filter(Boolean) : [];
       if (images.length) {
         images.forEach((src, k) => {
+          // группа картинок [a, b, c] — слайдер
+          if (Array.isArray(src)) {
+            el.gallery.append(buildSlider(src, c));
+            return;
+          }
           const fig = document.createElement('div');
           fig.className = 'case__shot';
           if (/\.(mp4|webm)$/i.test(src)) {
@@ -948,6 +953,54 @@
           el.gallery.append(ph);
         }
       }
+    }
+
+    // Слайдер: картинки листаются вбок (стрелки, точки, свайп на телефоне)
+    function buildSlider(srcs, c) {
+      const box = document.createElement('div');
+      box.className = 'case__shot case__slider';
+      const track = document.createElement('div');
+      track.className = 'case__slider-track';
+      srcs.forEach((s, k) => {
+        const img = new Image();
+        img.src = s;
+        img.alt = `${c.title} — слайд ${k + 1}`;
+        img.decoding = 'async';
+        img.loading = 'lazy';
+        track.append(img);
+      });
+      const nav = document.createElement('div');
+      nav.className = 'case__slider-nav';
+      const prev = document.createElement('button');
+      const next = document.createElement('button');
+      prev.type = next.type = 'button';
+      prev.className = 'case__slider-btn case__slider-btn--prev';
+      next.className = 'case__slider-btn';
+      prev.setAttribute('aria-label', 'Предыдущий слайд');
+      next.setAttribute('aria-label', 'Следующий слайд');
+      prev.innerHTML = next.innerHTML = '<img src="assets/img/arrow.svg" alt="">';
+      const dots = srcs.map((_, k) => {
+        const d = document.createElement('span');
+        d.className = 'case__slider-dot';
+        return d;
+      });
+      const dotsBox = document.createElement('div');
+      dotsBox.className = 'case__slider-dots';
+      dotsBox.append(...dots);
+      nav.append(prev, dotsBox, next);
+      box.append(track, nav);
+
+      const current = () => Math.round(track.scrollLeft / Math.max(1, track.clientWidth));
+      const go = (i) => {
+        const n = srcs.length;
+        track.scrollTo({ left: mod(i, n) * track.clientWidth, behavior: reduced.matches ? 'auto' : 'smooth' });
+      };
+      const mark = () => dots.forEach((d, k) => d.classList.toggle('is-active', k === current()));
+      prev.addEventListener('click', () => go(current() - 1));
+      next.addEventListener('click', () => go(current() + 1));
+      track.addEventListener('scroll', mark, { passive: true });
+      mark();
+      return box;
     }
 
     // Телефоны капризнее компьютера:
