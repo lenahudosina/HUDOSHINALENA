@@ -158,6 +158,26 @@ window.SITE = {
       ]
     },
     {
+      title: 'ДИПФЕЙКИ',
+      kind: 'Лонгрид о дипфейках',
+      description: 'Лонгрид о том, как технологии дипфейков меняют общество: с одной стороны — персонализированный и креативный контент, с другой — кризис доверия к любым цифровым данным из-за лёгкости подделки фото, видео и аудио.',
+      roleShort: 'Веб-дизайнер',
+      doneShort: 'Концепция, дизайн и вёрстка лонгрида на Tilda, анимации',
+      role: 'Веб-дизайнер. Придумала концепцию лонгрида и собрала его на Tilda.',
+      done: [
+        'Концепция и визуальный язык: распознавание лиц, пунктирные линии',
+        'Таймлайн появления и роста дипфейков',
+        'Анимации и интерактивные блоки',
+        'Адаптивная версия для телефонов',
+        'Сборка на Tilda'
+      ],
+      link: 'https://lenahudoshinaa.tilda.ws/454',
+      cover: 'assets/cases/07/cover.jpg?v=2',
+      images: [
+        'assets/cases/07/video1.mp4', 'assets/cases/07/1.jpg', 'assets/cases/07/video2.mp4', 'assets/cases/07/2.jpg', 'assets/cases/07/video3.mp4', 'assets/cases/07/3.jpg', 'assets/cases/07/4.jpg', 'assets/cases/07/5.jpg', ['assets/cases/07/6.jpg', 'assets/cases/07/7.jpg', 'assets/cases/07/8.jpg'], 'assets/cases/07/video4.mp4', 'assets/cases/07/9.jpg', 'assets/cases/07/10.jpg'
+      ]
+    },
+    {
       title: 'СЕНТИВО',
       kind: 'Сайт студии интерьеров',
       description: 'Сайт студии дизайна интерьеров. Интерьер как продолжение чувств: название отсылает к итальянскому sentire — «чувствовать», а визуальной метафорой стали архитектурные чертежи.',
@@ -253,26 +273,6 @@ window.SITE = {
       cover: 'assets/cases/06/cover.jpg',
       images: [
         'assets/cases/06/1.jpg', 'assets/cases/06/2.jpg', 'assets/cases/06/3.jpg', 'assets/cases/06/4.jpg', 'assets/cases/06/5.jpg', 'assets/cases/06/6.jpg', 'assets/cases/06/7.jpg', 'assets/cases/06/8.jpg', 'assets/cases/06/9.jpg', 'assets/cases/06/10.jpg', 'assets/cases/06/11.jpg'
-      ]
-    },
-    {
-      title: 'ДИПФЕЙКИ',
-      kind: 'Лонгрид о дипфейках',
-      description: 'Лонгрид о том, как технологии дипфейков меняют общество: с одной стороны — персонализированный и креативный контент, с другой — кризис доверия к любым цифровым данным из-за лёгкости подделки фото, видео и аудио.',
-      roleShort: 'Веб-дизайнер',
-      doneShort: 'Концепция, дизайн и вёрстка лонгрида на Tilda, анимации',
-      role: 'Веб-дизайнер. Придумала концепцию лонгрида и собрала его на Tilda.',
-      done: [
-        'Концепция и визуальный язык: распознавание лиц, пунктирные линии',
-        'Таймлайн появления и роста дипфейков',
-        'Анимации и интерактивные блоки',
-        'Адаптивная версия для телефонов',
-        'Сборка на Tilda'
-      ],
-      link: 'https://lenahudoshinaa.tilda.ws/454',
-      cover: 'assets/cases/07/cover.jpg',
-      images: [
-        'assets/cases/07/video1.mp4', 'assets/cases/07/1.jpg', 'assets/cases/07/video2.mp4', 'assets/cases/07/2.jpg', 'assets/cases/07/video3.mp4', 'assets/cases/07/3.jpg', 'assets/cases/07/4.jpg', 'assets/cases/07/5.jpg', ['assets/cases/07/6.jpg', 'assets/cases/07/7.jpg', 'assets/cases/07/8.jpg'], 'assets/cases/07/video4.mp4', 'assets/cases/07/9.jpg', 'assets/cases/07/10.jpg'
       ]
     }
   ]
